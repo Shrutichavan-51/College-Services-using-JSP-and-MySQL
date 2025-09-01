@@ -1,0 +1,207 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 Apr, 2025, 5:56:38 PM
+    Author     : swapn
+*/
+
+/* General Section Styling */
+/* Card for each state */
+
+/*for enquire style  */
+.state-colleges {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+.state-college {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-sizing: border-box;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 168px) {
+  .state-college {
+    width: 20%; /* On smaller screens, each card takes more width */
+  }
+}
+/*
+@media (max-width: 80px) {
+  .state-college {
+    width: 50%;  Full width on very small screens 
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}*/
+
+@media (max-width: 768px) {
+    .state-colleges {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .state-colleges {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+<!--Top Private Engineering Colleges (Last 5 Years' Cutoff)-->
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    color: #333;
+}
+
+header {
+    background-color: #006699;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.section {
+    margin: 30px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+    text-align: center;
+    color: #006699;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cutoff-year-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.cutoff-year-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #006699;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #006699;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cutoff-year-links a:hover {
+    background-color: #006699;
+    color: #fff;
+}
+
+.state-colleges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.state-college {
+    background-color: #f9fcff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.state-college:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.state-college h4 {
+    color: #006699;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.state-college p {
+    color: #444;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.scholarship-section {
+    margin-top: 40px;
+    background: #f0f8ff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-category {
+    margin-bottom: 25px;
+}
+
+.scholarship-category h3 {
+    color: #004d66;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-left: 5px solid #007acc;
+    padding-left: 10px;
+}
+
+.scholarship-category ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.scholarship-category li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+.scholarship-category a {
+    color: #007acc;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.scholarship-category a:hover {
+    text-decoration: underline;
+    color: #005c8a;
+}
+
